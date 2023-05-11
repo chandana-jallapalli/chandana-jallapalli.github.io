@@ -1,10 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <title>CHANDANA JALLAPALLI</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="edge://resources/css/md_colors.css">
+  <link rel="stylesheet" href="edge://resources/css/text_defaults_md.css">
+  <link rel="stylesheet" href="index.css">
+  <!-- Enable error-reporting -->
+  <script src="pdf-error-reporting.js"></script>
 </head>
 <body>
-    <h2>CHANDANA JALLAPALLI</h2>
-    
+
+  <!-- the contents of ui-container are react-based PDF UI components -->
+  <div id="ui-container"></div>
+
+  <!-- This is container div for the currently open modal if exists -->
+  <div id="modal-root"></div>
+
+  <div id="sizer"></div>
+
+  <div id="document-container">
+    <div id="embed-border"></div>
+  </div>
+
 </body>
+<!-- <script src="edge://resources/js/cr/event_target.js"></script> -->
+<!-- Defining loadtimedata interface. -->
+<script src="edge://resources/js/load_time_data_deprecated.js"></script>
+<!-- Defining JobRunner construct. -->
+<script src="helpers/job_runner.js"></script>
+<!-- Initialize job runners and initialize loadtimedata. -->
+<script src="./setup_job_runners.js"></script>
+<!-- The generated bundles from webpack. -->
+<script src="dist/lib_fast_deprecated.chunk.js"></script>
+<script src="dist/lib_fast_web_components.chunk.js"></script>
+<script src="dist/lib_react.chunk.js"></script>
+<script src="dist/pdfui_component.chunk.js"></script>
+<script src="dist/pdf.bundle.js"></script>
+
+<script src="../main.js" type="module"></script>
 </html>
